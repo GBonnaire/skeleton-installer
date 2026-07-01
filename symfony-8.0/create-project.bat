@@ -79,6 +79,9 @@ rmdir /s /q .git
 git init -q
 echo     Nouveau depot Git initialise.
 
+REM --- 2Bis. Suppression des fichiers du skeleton ----------------------------
+del README.md
+
 REM --- 3. Demarrage de Docker ------------------------------------------------
 echo ==^> Construction et demarrage des conteneurs Docker ...
 %DC% up -d --build

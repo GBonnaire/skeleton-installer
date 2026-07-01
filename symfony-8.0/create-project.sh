@@ -69,6 +69,9 @@ rm -rf .git
 git init -q
 echo "    Nouveau dépôt Git initialisé."
 
+# --- 2Bis. Suppression des fichiers du skeleton -----------------------------
+rm -f README.md
+
 # --- 3. Démarrage de Docker -------------------------------------------------
 echo "==> Construction et démarrage des conteneurs Docker ..."
 $DC up -d --build
