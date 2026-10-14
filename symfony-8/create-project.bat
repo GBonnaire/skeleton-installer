@@ -19,12 +19,12 @@ REM
 REM Exemple :
 REM   scripts\create-project.bat                 REM demande le repertoire (defaut : .)
 REM   scripts\create-project.bat mon-app
-REM   scripts\create-project.bat mon-app https://github.com/GBonnaire/skeleton-symfony-8.0.git
+REM   scripts\create-project.bat mon-app https://github.com/GBonnaire/skeleton-symfony-8.git
 REM ============================================================================
 
 setlocal enableextensions enabledelayedexpansion
 
-set "DEFAULT_REPO=https://github.com/GBonnaire/skeleton-symfony-8.0.git"
+set "DEFAULT_REPO=https://github.com/GBonnaire/skeleton-symfony-8.git"
 
 set "DEST=%~1"
 set "REPO_URL=%~2"

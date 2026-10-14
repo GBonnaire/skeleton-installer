@@ -19,12 +19,12 @@
 # Exemple :
 #   ./scripts/create-project.sh                 # demande le répertoire (défaut : .)
 #   ./scripts/create-project.sh mon-app
-#   ./scripts/create-project.sh mon-app https://github.com/GBonnaire/skeleton-symfony-8.0.git
+#   ./scripts/create-project.sh mon-app https://github.com/GBonnaire/skeleton-symfony-8.git
 
 set -euo pipefail
 
 # --- Paramètres -------------------------------------------------------------
-DEFAULT_REPO="https://github.com/GBonnaire/skeleton-symfony-8.0.git"
+DEFAULT_REPO="https://github.com/GBonnaire/skeleton-symfony-8.git"
 
 DEST="${1:-}"
 REPO_URL="${2:-$DEFAULT_REPO}"
